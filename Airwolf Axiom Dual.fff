@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <profile name="Airwolf Axiom Dual" version="2017-05-08 12:40:28" app="S3D-Software 3.1.1">
-  <baseProfile>Default</baseProfile>
+  <baseProfile>Airwolf Axiom Dual</baseProfile>
   <printMaterial>ABS</printMaterial>
   <printQuality>Medium</printQuality>
   <printExtruders>Extruder 1 Only</printExtruders>
