@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<profile name="Airwolf Axiom Dual" version="2017-05-08 12:40:28" app="S3D-Software 3.1.1">
-  <baseProfile>Airwolf Axiom Dual</baseProfile>
+<profile name="Airwolf Axiom Dual" version="2017-06-20 08:50:01" app="S3D-Software 3.1.1">
+  <baseProfile>Default</baseProfile>
   <printMaterial>ABS</printMaterial>
   <printQuality>Medium</printQuality>
   <printExtruders>Extruder 1 Only</printExtruders>
@@ -13,9 +13,9 @@
     <useRetract>1</useRetract>
     <retractionDistance>5</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
-    <retractionZLift>0</retractionZLift>
-    <retractionSpeed>2400</retractionSpeed>
-    <useCoasting>1</useCoasting>
+    <retractionZLift>0.5</retractionZLift>
+    <retractionSpeed>2000</retractionSpeed>
+    <useCoasting>0</useCoasting>
     <coastingDistance>0.2</coastingDistance>
     <useWipe>0</useWipe>
     <wipeDistance>5</wipeDistance>
@@ -29,26 +29,26 @@
     <useRetract>1</useRetract>
     <retractionDistance>5</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
-    <retractionZLift>0</retractionZLift>
-    <retractionSpeed>2400</retractionSpeed>
-    <useCoasting>1</useCoasting>
+    <retractionZLift>0.5</retractionZLift>
+    <retractionSpeed>2000</retractionSpeed>
+    <useCoasting>0</useCoasting>
     <coastingDistance>0.2</coastingDistance>
     <useWipe>0</useWipe>
     <wipeDistance>5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.22</layerHeight>
-  <topSolidLayers>6</topSolidLayers>
-  <bottomSolidLayers>3</bottomSolidLayers>
-  <perimeterOutlines>3</perimeterOutlines>
+  <layerHeight>0.25</layerHeight>
+  <topSolidLayers>4</topSolidLayers>
+  <bottomSolidLayers>4</bottomSolidLayers>
+  <perimeterOutlines>6</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
-  <startPointOption>2</startPointOption>
+  <startPointOption>1</startPointOption>
   <startPointOriginX>0</startPointOriginX>
   <startPointOriginY>0</startPointOriginY>
   <startPointOriginZ>300</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>96</firstLayerHeightPercentage>
+  <firstLayerHeightPercentage>120</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   <useRaft>0</useRaft>
@@ -61,8 +61,8 @@
   <useSkirt>1</useSkirt>
   <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
-  <skirtOutlines>3</skirtOutlines>
-  <skirtOffset>4</skirtOffset>
+  <skirtOutlines>4</skirtOutlines>
+  <skirtOffset>8</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
   <primePillarWidth>12</primePillarWidth>
@@ -77,9 +77,9 @@
   <oozeShieldSpeedMultiplier>1</oozeShieldSpeedMultiplier>
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Rectilinear</internalInfillPattern>
-  <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>20</infillPercentage>
-  <outlineOverlapPercentage>15</outlineOverlapPercentage>
+  <externalInfillPattern>Concentric</externalInfillPattern>
+  <infillPercentage>25</infillPercentage>
+  <outlineOverlapPercentage>20</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>100</infillExtrusionWidthPercentage>
   <minInfillLength>5</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
@@ -87,13 +87,13 @@
   <overlapInfillAngles>0</overlapInfillAngles>
   <generateSupport>0</generateSupport>
   <supportExtruder>0</supportExtruder>
-  <supportInfillPercentage>30</supportInfillPercentage>
+  <supportInfillPercentage>70</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
   <denseSupportLayers>0</denseSupportLayers>
   <denseSupportInfillPercentage>70</denseSupportInfillPercentage>
   <supportLayerInterval>1</supportLayerInterval>
   <supportHorizontalPartOffset>0.3</supportHorizontalPartOffset>
-  <supportUpperSeparationLayers>1</supportUpperSeparationLayers>
+  <supportUpperSeparationLayers>2</supportUpperSeparationLayers>
   <supportLowerSeparationLayers>1</supportLowerSeparationLayers>
   <supportType>0</supportType>
   <supportGridSpacing>4</supportGridSpacing>
@@ -105,7 +105,8 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>0</stabilizeAtStartup>
-    <setpoint layer="1" temperature="230"/>
+    <setpoint layer="1" temperature="250"/>
+    <setpoint layer="2" temperature="230"/>
   </temperatureController>
   <temperatureController name="Secondary Extruder (Right)">
     <temperatureNumber>1</temperatureNumber>
@@ -113,7 +114,8 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>0</stabilizeAtStartup>
-    <setpoint layer="1" temperature="230"/>
+    <setpoint layer="1" temperature="250"/>
+    <setpoint layer="2" temperature="230"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
@@ -122,17 +124,18 @@
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>0</stabilizeAtStartup>
     <setpoint layer="1" temperature="130"/>
-    <setpoint layer="3" temperature="115"/>
+    <setpoint layer="2" temperature="115"/>
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
+    <setpoint layer="2" speed="60"/>
   </fanSpeed>
-  <blipFanToFullPower>0</blipFanToFullPower>
-  <adjustSpeedForCooling>1</adjustSpeedForCooling>
+  <blipFanToFullPower>1</blipFanToFullPower>
+  <adjustSpeedForCooling>0</adjustSpeedForCooling>
   <minSpeedLayerTime>15</minSpeedLayerTime>
   <minCoolingSpeedSlowdown>20</minCoolingSpeedSlowdown>
-  <increaseFanForCooling>0</increaseFanForCooling>
-  <minFanLayerTime>45</minFanLayerTime>
+  <increaseFanForCooling>1</increaseFanForCooling>
+  <minFanLayerTime>20</minFanLayerTime>
   <maxCoolingFanSpeed>100</maxCoolingFanSpeed>
   <increaseFanForBridging>0</increaseFanForBridging>
   <bridgingFanSpeed>100</bridgingFanSpeed>
@@ -145,7 +148,7 @@
   <applyToolheadOffsets>0</applyToolheadOffsets>
   <gcodeXoffset>20</gcodeXoffset>
   <gcodeYoffset>0</gcodeYoffset>
-  <gcodeZoffset>0</gcodeZoffset>
+  <gcodeZoffset>-0.05</gcodeZoffset>
   <overrideMachineDefinition>1</overrideMachineDefinition>
   <machineTypeOverride>0</machineTypeOverride>
   <strokeXoverride>280</strokeXoverride>
@@ -167,25 +170,25 @@
   <baudRateOverride>250000</baudRateOverride>
   <overridePrinterModels>0</overridePrinterModels>
   <printerModelsOverride></printerModelsOverride>
-  <startingGcode>;Axiom Dual Start Code (Rich Mayfield),	M42 P6 S255		; turn lights on,	G21		; metric values,	G90                          	; absolute positioning,	M83                         	; set extruder to relative mode for purging and cleaning,	M107		; Turn fan off,	M140 S[bed0_temperature]	; Preheat bed do not wait,,M117 Heating...       		; Print message on LCD Display,	M104 T0 S[extruder0_temperature]	; Heat first nozzle for auto-leveling ,	M104 T1 S[extruder1_temperature]	; heat second nozzle for auto leveling,	M109 T0 S[extruder0_temperature]	; Wait for first extruder to reach temperature,	M109 T1 S[extruder1_temperature]	; Wait for second extruder to reach temperature,,M117 Homing...        		; Print message on LCD Display,                        G28 F300		; Home all axes,,M117 Cleaning...        		; Print message on LCD Display,	T1	                 	; switch to secondary nozzle,	G1 E-20 F125		; Retract filament,	T0	                 	; switch to primary nozzle,	G1 E-20 F125		;  Retract filament,,	G1 Z0  F1200		; Raise bed,	G1 X20 Y226 F7000	; Transit to brushes,	G1 Z-2  F1200               	; Lower to brush level,	G1 X138 Y226 F2000	; First pass across brushes,	G1 X40 Y230 F2000	; Second pass back across brushes,	G1 X138 Y230 F2000	; Third pass through brushes,	G1 X40 Y226 F2000           	; Fourth pass back through brushes,	G1 Z0 F1200		; Raise above bed,,M117 Auto-level probing...        		; Print message on LCD Display,	G28 X0 Y0		; Begin homing routine, home x/y axes,	M204 S300                    	; set accel for probing,	M203 Z4                      	; set z max speed for probing,	G29		; Auto level routine,	M204 S3500                   	; set accel back to normal,	M203 Z20                      	; set z max back to limit,	G1 Z10	 	; raise nozzle up 10mm,,M117 Purge and prime...        		; Print message on LCD Display,	G0 X150 Y230 F7000	; Rapid X-Y to ooze location,	G0 Z5 F1200		; Rapid Z to ooze location,	M104 T1 S0		; Turn off second nozzle,	T0	                 	; switch to primary nozzle,	G1 E70 F125		; Prime extruder,	M82		; Switch to absolute extrusion,	G92 E0                        	; zero extruder,,	G4 S10		; Pause for ooze,	M190 S[bed0_temperature]	; Wait for bed to reach proper temperature,	G1 X40 F2000		; Swipe through brushes,	G0 Z10 F7000		; Raise bed,	G0 X140 Y100 F10000	; Move bed around center for safety and to prevent dragging across clips on start,	,	M400                         	; clear buffer,,M117 AXIOM Printing...	; Print message on LCD Display</startingGcode>
+  <startingGcode>;Axiom Dual Start Code (Rich Mayfield),	M42 P6 S255		; turn lights on,	G21		; metric values,	G90                          	; absolute positioning,	M83                         	; set extruder to relative mode for purging and cleaning,	M140 S[bed0_temperature]	; Preheat bed do not wait,	M104 T0 S[extruder0_temperature]	; Heat primary no wait,	M104 T1 S[extruder1_temperature]	; Heat secondary no wait,,M117 Homing...        		; Print message on LCD Display,                        G28 X0 Y0 Z0 F300		; Home all axes,,M117 Heating...       		; Print message on LCD Display,	M109 T0 S[extruder0_temperature]	; Wait for first extruder to reach temperature,	M109 T1 S[extruder1_temperature]	; Wait for second extruder to reach temperature,,M117 Cleaning...        		; Print message on LCD Display,	T1	                 	; switch to secondary nozzle,	G1 E-20 F2000		; Retract filament,	T0	                 	; switch to primary nozzle,	G1 E-20 F2000		;  Retract filament,,	G0 X20 Y226 Z0 F7000	; Rapid transit to brushes,	G1 Z-2  F7000               	; Lower to brush level,	G1 X138 Y226 F2000	; First pass across brushes,	G1 X40 Y230 F2000	; Second pass back across brushes,	G1 X138 Y230 F2000	; Third pass through brushes,	G1 X40 Y226 F2000           	; Fourth pass back through brushes,	G1 Z0 F5000		; Raise above bed,,M117 Auto-level probing...        		; Print message on LCD Display,	M204 S300                    	; set accel for probing,	M203 Z4                      	; set z max speed for probing,	G28 X0 Y0		; Mandatory X/Y home prior to auto level,	G29		; Auto level routine,	M204 S3500                   	; set accel back to normal,	M203 Z20                      	; set z max back to limit,	G1 Z10	 	; raise nozzle up 10mm,,M117 Purge and prime...        		; Print message on LCD Display,	G0 X150 Y230 F12000	; Rapid X-Y to ooze location,	G0 Z5 F7000		; Rapid Z to ooze location,	T1	                 	; switch to secondary nozzle,	G1 E25 F1000		; Extrude to prevent retract build-up,	M104 T1 S0		; Turn off second nozzle,	T0	                 	; switch to primary nozzle,	G1 E70 F1000		; Purge extruder,	G4 S5		; Pause for ooze,	M190 S[bed0_temperature]	; Wait for bed to reach proper temperature,,M117 Prime and clean...        		; Print message on LCD Display,	G1 E15 F1000		; Prime extruder,	G1 E-5.0000 F2000	; Retract,	M82		; Switch to absolute extrusion,	G92 E0                        	; zero extruder,	G1 X40 F2500		; Swipe through brushes,	G0 Z10 F7000		; Raise bed,	G0 X140 Y100 F10000	; Move bed around center for safety and to prevent dragging across clips on start,	,	M400                         	; clear buffer,,M117 AXIOM Printing...	; Print message on LCD Display</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
-  <endingGcode>;EndCode,	M400,,	M104 T0 S0 	; switch off first nozzle,	M104 T1 S0 	; switch off second nozzle,	M107 	; fans off,                   ,	G28	; Home all axes,	M84 	; steppers off,	M42 P6 S0		; lights off,M117 Cooldown, do not power off!,	M190 S90	; Cool bed to 90,	G4 S600	; Pause for temperature equalization,	M190 S80	; Cool bed to 80,	G4 S600	; Pause for temperature equalization,	M190 S70	; Cool bed to 70,	G4 S600	; Pause for temperature equalization,	M190 S60	; Cool bed to 60,	G4 S600	; Pause for temperature equalization,	M190 S50	; Cool bed to 50,	G4 S600	; Pause for temperature equalization,	M190 S40	; Cool bed to 40,	G4 S600	; Pause for temperature equalization,	M190 S30	; Cool bed to 30,	G4 S600	; Pause for temperature equalization,	M140 S0	; Shut off bed,,M117 Printing complete!	;Put printing message on LCD screen</endingGcode>
+  <endingGcode>;EndCode,	M400,,	M104 T0 S0 	; switch off first nozzle,	M104 T1 S0 	; switch off second nozzle,	M107 	; fans off,                   ,	G28	; Home all axes,	M84 	; steppers off,	M42 P6 S0		; lights off,,M117 Cooldown do not power off! 	;Message on Screen,	M190 S90	; Cool bed to 90,	G4 S600	; Pause for temperature equalization,	M190 S80	; Cool bed to 80,	G4 S600	; Pause for temperature equalization,	M190 S70	; Cool bed to 70,	G4 S600	; Pause for temperature equalization,	M190 S60	; Cool bed to 60,	G4 S600	; Pause for temperature equalization,	M190 S50	; Cool bed to 50,	G4 S600	; Pause for temperature equalization,	M190 S40	; Cool bed to 40,	G4 S600	; Pause for temperature equalization,	M190 S30	; Cool bed to 30,	G4 S600	; Pause for temperature equalization,	M140 S0	; Shut off bed,,M117 Printing complete!	;Put printing message on LCD screen</endingGcode>
   <exportFileFormat>gcode</exportFileFormat>
   <celebration>0</celebration>
   <celebrationSong>Star Wars</celebrationSong>
   <postProcessing>|{REPLACE &quot;; layer &quot; &quot;M117 Layer=&quot;}|{REPLACE &quot;, Z = &quot; &quot; Z=&quot;}|{REPLACE &quot;;   Build time:&quot; &quot;;Print time:&quot;}|</postProcessing>
-  <defaultSpeed>3600</defaultSpeed>
-  <outlineUnderspeed>0.5</outlineUnderspeed>
-  <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
-  <supportUnderspeed>0.8</supportUnderspeed>
-  <rapidXYspeed>4800</rapidXYspeed>
-  <rapidZspeed>1000</rapidZspeed>
+  <defaultSpeed>2500</defaultSpeed>
+  <outlineUnderspeed>0.8</outlineUnderspeed>
+  <solidInfillUnderspeed>1</solidInfillUnderspeed>
+  <supportUnderspeed>1</supportUnderspeed>
+  <rapidXYspeed>12000</rapidXYspeed>
+  <rapidZspeed>1200</rapidZspeed>
   <minBridgingArea>50</minBridgingArea>
   <bridgingExtraInflation>0</bridgingExtraInflation>
   <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier>
-  <bridgingSpeedMultiplier>1</bridgingSpeedMultiplier>
+  <bridgingSpeedMultiplier>0.2</bridgingSpeedMultiplier>
   <filamentDiameter>2.88</filamentDiameter>
   <filamentPricePerKg>46</filamentPricePerKg>
   <filamentDensity>1.25</filamentDensity>
@@ -205,23 +208,31 @@
   <onlyWipeOutlines>1</onlyWipeOutlines>
   <avoidCrossingOutline>0</avoidCrossingOutline>
   <maxMovementDetourFactor>3</maxMovementDetourFactor>
-  <toolChangeRetractionDistance>12</toolChangeRetractionDistance>
-  <toolChangeExtraRestartDistance>-0.5</toolChangeExtraRestartDistance>
-  <toolChangeRetractionSpeed>600</toolChangeRetractionSpeed>
+  <toolChangeRetractionDistance>22</toolChangeRetractionDistance>
+  <toolChangeExtraRestartDistance>0</toolChangeExtraRestartDistance>
+  <toolChangeRetractionSpeed>1200</toolChangeRetractionSpeed>
   <allowThinWallGapFill>1</allowThinWallGapFill>
   <thinWallAllowedOverlapPercentage>20</thinWallAllowedOverlapPercentage>
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
-  <autoConfigureMaterial name="PLA">
-    <globalExtruderTemperature>190</globalExtruderTemperature>
-    <globalBedTemperature>60</globalBedTemperature>
-    <globalExtrusionMultiplier>0.9</globalExtrusionMultiplier>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="100"/>
-    </fanSpeed>
-  </autoConfigureMaterial>
   <autoConfigureMaterial name="ABS">
-    <globalExtruderTemperature>230</globalExtruderTemperature>
+    <temperatureController name="Primary Extruder (Left)">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <relayBetweenLayers>0</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>0</stabilizeAtStartup>
+      <setpoint layer="1" temperature="250"/>
+      <setpoint layer="2" temperature="230"/>
+    </temperatureController>
+    <temperatureController name="Secondary Extruder (Right)">
+      <temperatureNumber>1</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <relayBetweenLayers>0</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>0</stabilizeAtStartup>
+      <setpoint layer="1" temperature="250"/>
+      <setpoint layer="2" temperature="230"/>
+    </temperatureController>
     <temperatureController name="Heated Bed">
       <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>1</isHeatedBed>
@@ -229,50 +240,110 @@
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>0</stabilizeAtStartup>
       <setpoint layer="1" temperature="130"/>
-      <setpoint layer="3" temperature="115"/>
+      <setpoint layer="2" temperature="115"/>
     </temperatureController>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="60"/>
     </fanSpeed>
+    <extruder name="Primary Extruder (Left)">
+      <toolheadNumber>0</toolheadNumber>
+      <diameter>0.5</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.5</width>
+      <extrusionMultiplier>0.98</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>5</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0.5</retractionZLift>
+      <retractionSpeed>2000</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.2</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
+    <extruder name="Secondary Extruder (Right)">
+      <toolheadNumber>1</toolheadNumber>
+      <diameter>0.5</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.5</width>
+      <extrusionMultiplier>0.98</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>5</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>0.5</retractionZLift>
+      <retractionSpeed>2000</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>0.2</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
   </autoConfigureMaterial>
-  <autoConfigureMaterial name="PVA">
-    <globalExtruderTemperature>195</globalExtruderTemperature>
-    <globalBedTemperature>80</globalBedTemperature>
-    <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
+  <autoConfigureMaterial name="PLA">
+  <extruder name="Primary Extruder (Left)">
+    <toolheadNumber>0</toolheadNumber>
+    <extrusionMultiplier>0.90</extrusionMultiplier>
+  </extruder>
+  <extruder name="Secondary Extruder (Right)">
+    <toolheadNumber>1</toolheadNumber>
+    <extrusionMultiplier>0.90</extrusionMultiplier>
+  </extruder>
+    <temperatureController name="Primary Extruder (Left)">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <relayBetweenLayers>0</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>0</stabilizeAtStartup>
+      <setpoint layer="1" temperature="250"/>
+      <setpoint layer="2" temperature="230"/>
+    </temperatureController>
+    <temperatureController name="Secondary Extruder (Right)">
+      <temperatureNumber>1</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <relayBetweenLayers>0</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>0</stabilizeAtStartup>
+      <setpoint layer="1" temperature="250"/>
+      <setpoint layer="2" temperature="230"/>
+    </temperatureController>
+    <temperatureController name="Heated Bed">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>1</isHeatedBed>
+      <relayBetweenLayers>1</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>0</stabilizeAtStartup>
+      <setpoint layer="1" temperature="130"/>
+      <setpoint layer="2" temperature="115"/>
+    </temperatureController>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="100"/>
-    </fanSpeed>
-  </autoConfigureMaterial>
-  <autoConfigureMaterial name="Nylon">
-    <globalExtruderTemperature>220</globalExtruderTemperature>
-    <globalBedTemperature>80</globalBedTemperature>
-    <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="60"/>
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureQuality name="Fast">
     <layerHeight>0.3</layerHeight>
-    <topSolidLayers>3</topSolidLayers>
-    <bottomSolidLayers>3</bottomSolidLayers>
+    <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
+    <topSolidLayers>4</topSolidLayers>
+    <bottomSolidLayers>4</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
     <infillPercentage>15</infillPercentage>
     <supportInfillPercentage>25</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium">
-    <layerHeight>0.22</layerHeight>
-    <topSolidLayers>6</topSolidLayers>
-    <bottomSolidLayers>3</bottomSolidLayers>
-    <skirtLayers>1</skirtLayers>
-    <infillPercentage>20</infillPercentage>
-    <supportInfillPercentage>30</supportInfillPercentage>
-  </autoConfigureQuality>
-  <autoConfigureQuality name="High">
-    <layerHeight>0.1</layerHeight>
+    <layerHeight>0.25</layerHeight>
+    <firstLayerHeightPercentage>120</firstLayerHeightPercentage>
     <topSolidLayers>4</topSolidLayers>
     <bottomSolidLayers>4</bottomSolidLayers>
-    <skirtLayers>2</skirtLayers>
+    <skirtLayers>1</skirtLayers>
+    <infillPercentage>25</infillPercentage>
+    <supportInfillPercentage>70</supportInfillPercentage>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="High">
+    <layerHeight>0.15</layerHeight>
+    <firstLayerHeightPercentage>200</firstLayerHeightPercentage>
+    <topSolidLayers>4</topSolidLayers>
+    <bottomSolidLayers>4</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
   </autoConfigureQuality>
@@ -285,7 +356,7 @@
     <useSkirt>1</useSkirt>
     <usePrimePillar>0</usePrimePillar>
     <useOozeShield>0</useOozeShield>
-    <startingGcode>;Axiom Dual Start Code (Rich Mayfield),	M42 P6 S255		; turn lights on,	G21		; metric values,	G90                          	; absolute positioning,	M83                         	; set extruder to relative mode for purging and cleaning,	M107		; Turn fan off,	M140 S[bed0_temperature]	; Preheat bed do not wait,,M117 Heating...       		; Print message on LCD Display,	M104 T0 S[extruder0_temperature]	; Heat first nozzle for auto-leveling ,	M104 T1 S[extruder1_temperature]	; heat second nozzle for auto leveling,	M109 T0 S[extruder0_temperature]	; Wait for first extruder to reach temperature,	M109 T1 S[extruder1_temperature]	; Wait for second extruder to reach temperature,,M117 Homing...        		; Print message on LCD Display,                        G28 F300		; Home all axes,,M117 Cleaning...        		; Print message on LCD Display,	T1	                 	; switch to secondary nozzle,	G1 E-20 F125		; Retract filament,	T0	                 	; switch to primary nozzle,	G1 E-20 F125		;  Retract filament,,	G1 Z0  F1200		; Raise bed,	G1 X20 Y226 F7000	; Transit to brushes,	G1 Z-2  F1200               	; Lower to brush level,	G1 X138 Y226 F2000	; First pass across brushes,	G1 X40 Y230 F2000	; Second pass back across brushes,	G1 X138 Y230 F2000	; Third pass through brushes,	G1 X40 Y226 F2000           	; Fourth pass back through brushes,	G1 Z0 F1200		; Raise above bed,,M117 Auto-level probing...        		; Print message on LCD Display,	G28 X0 Y0		; Begin homing routine, home x/y axes,	M204 S300                    	; set accel for probing,	M203 Z4                      	; set z max speed for probing,	G29		; Auto level routine,	M204 S3500                   	; set accel back to normal,	M203 Z20                      	; set z max back to limit,	G1 Z10	 	; raise nozzle up 10mm,,M117 Purge and prime...        		; Print message on LCD Display,	G0 X150 Y230 F7000	; Rapid X-Y to ooze location,	G0 Z5 F1200		; Rapid Z to ooze location,	M104 T1 S0		; Turn off second nozzle,	T0	                 	; switch to primary nozzle,	G1 E70 F125		; Prime extruder,	M82		; Switch to absolute extrusion,	G92 E0                        	; zero extruder,,	G4 S10		; Pause for ooze,	M190 S[bed0_temperature]	; Wait for bed to reach proper temperature,	G1 X40 F2000		; Swipe through brushes,	G0 Z10 F7000		; Raise bed,	G0 X140 Y100 F10000	; Move bed around center for safety and to prevent dragging across clips on start,	,	M400                         	; clear buffer,,M117 AXIOM Printing...	; Print message on LCD Display</startingGcode>
+    <startingGcode>;Axiom Dual Start Code (Rich Mayfield),	M42 P6 S255		; turn lights on,	G21		; metric values,	G90                          	; absolute positioning,	M83                         	; set extruder to relative mode for purging and cleaning,	M140 S[bed0_temperature]	; Preheat bed do not wait,	M104 T0 S[extruder0_temperature]	; Heat primary no wait,	M104 T1 S[extruder1_temperature]	; Heat secondary no wait,,M117 Homing...        		; Print message on LCD Display,                        G28 X0 Y0 Z0 F300		; Home all axes,,M117 Heating...       		; Print message on LCD Display,	M109 T0 S[extruder0_temperature]	; Wait for first extruder to reach temperature,	M109 T1 S[extruder1_temperature]	; Wait for second extruder to reach temperature,,M117 Cleaning...        		; Print message on LCD Display,	T1	                 	; switch to secondary nozzle,	G1 E-20 F2000		; Retract filament,	T0	                 	; switch to primary nozzle,	G1 E-20 F2000		;  Retract filament,,	G0 X20 Y226 Z0 F7000	; Rapid transit to brushes,	G1 Z-2  F7000               	; Lower to brush level,	G1 X138 Y226 F2000	; First pass across brushes,	G1 X40 Y230 F2000	; Second pass back across brushes,	G1 X138 Y230 F2000	; Third pass through brushes,	G1 X40 Y226 F2000           	; Fourth pass back through brushes,	G1 Z0 F5000		; Raise above bed,,M117 Auto-level probing...        		; Print message on LCD Display,	M204 S300                    	; set accel for probing,	M203 Z4                      	; set z max speed for probing,	G28 X0 Y0		; Mandatory X/Y home prior to auto level,	G29		; Auto level routine,	M204 S3500                   	; set accel back to normal,	M203 Z20                      	; set z max back to limit,	G1 Z10	 	; raise nozzle up 10mm,,M117 Purge and prime...        		; Print message on LCD Display,	G0 X150 Y230 F12000	; Rapid X-Y to ooze location,	G0 Z5 F7000		; Rapid Z to ooze location,	T1	                 	; switch to secondary nozzle,	G1 E25 F1000		; Extrude to prevent retract build-up,	M104 T1 S0		; Turn off second nozzle,	T0	                 	; switch to primary nozzle,	G1 E70 F1000		; Purge extruder,	G4 S5		; Pause for ooze,	M190 S[bed0_temperature]	; Wait for bed to reach proper temperature,,M117 Prime and clean...        		; Print message on LCD Display,	G1 E15 F1000		; Prime extruder,	G1 E-5.0000 F2000	; Retract,	M82		; Switch to absolute extrusion,	G92 E0                        	; zero extruder,	G1 X40 F2500		; Swipe through brushes,	G0 Z10 F7000		; Raise bed,	G0 X140 Y100 F10000	; Move bed around center for safety and to prevent dragging across clips on start,	,	M400                         	; clear buffer,,M117 AXIOM Printing...	; Print message on LCD Display</startingGcode>
   </autoConfigureExtruders>
   <autoConfigureExtruders name="Extruder 2 Only" allowedToolheads="1">
     <primaryExtruder>1</primaryExtruder>
@@ -296,17 +367,17 @@
     <useSkirt>1</useSkirt>
     <usePrimePillar>0</usePrimePillar>
     <useOozeShield>0</useOozeShield>
-    <startingGcode>;Axiom Dual Start Code (Rich Mayfield),	M42 P6 S255		; turn lights on,	G21		; metric values,	G90                          	; absolute positioning,	M83                         	; set extruder to relative mode for purging and cleaning,	M107		; Turn fan off,	M140 S[bed0_temperature]	; Preheat bed do not wait,,M117 Heating...       		; Print message on LCD Display,	M104 T0 S[extruder0_temperature]	; Heat first nozzle for auto-leveling ,	M104 T1 S[extruder1_temperature]	; heat second nozzle for auto leveling,	M109 T0 S[extruder0_temperature]	; Wait for first extruder to reach temperature,	M109 T1 S[extruder1_temperature]	; Wait for second extruder to reach temperature,,M117 Homing...        		; Print message on LCD Display,                        G28 F200		; Home all axes,,M117 Cleaning...        		; Print message on LCD Display,	T1	                 	; switch to secondary nozzle,	G1 E-20 F125		; Retract filament,	T0	                 	; switch to primary nozzle,	G1 E-20 F125		;  Retract filament,,	G1 Z0  F1200		; Raise bed,	G1 X20 Y226 F7000	; Transit to brushes,	G1 Z-2  F1200               	; Lower to brush level,	G1 X138 Y226 F2000	; First pass across brushes,	G1 X40 Y230 F2000	; Second pass back across brushes,	G1 X138 Y230 F2000	; Third pass through brushes,	G1 X40 Y226 F2000           	; Fourth pass back through brushes,	G1 Z0 F1200		; Raise above bed,,M117 Auto-level probing...        		; Print message on LCD Display,	G28 X0 Y0		; Begin homing routine home x/y axes,	M204 S300                    	; set accel for probing,	M203 Z4                      	; set z max speed for probing,	G29		; Auto level routine,	M204 S3500                   	; set accel back to normal,	M203 Z20                      	; set z max back to limit,	G1 Z10	 	; raise nozzle up 10mm,,M117 Purge and prime...        		; Print message on LCD Display,	M104 T0 S0		; Cool first extruder,	G0 X150 Y230 F7000	; Rapid X-Y to ooze location,	G0 Z5 F1200		; Rapid Z to ooze location,	T1	                 	; switch to secondary nozzle,	G1 E70 F125		; Prime extruder,	M82		; Switch to absolute extrusion,	G92 E0                        	; zero extruder,,	G4 S10		; Pause for ooze,	M190 S[bed0_temperature]	; Wait for bed to reach proper temperature,	G1 X40 F2000		; Swipe through brushes,	G0 Z10 F7000		; Raise bed,	G0 X140 Y100 F10000	; Move bed around center for safety and to prevent dragging across clips on start,,	M400                         	; clear buffer,,M117 AXIOM Printing...	; Print message on LCD Display</startingGcode>
+    <startingGcode>;Axiom Dual Start Code (Rich Mayfield),	M42 P6 S255		; turn lights on,	G21		; metric values,	G90                          	; absolute positioning,	M83                         	; set extruder to relative mode for purging and cleaning,	M140 S[bed0_temperature]	; Preheat bed do not wait,,M117 Heating...       		; Print message on LCD Display,	M104 T0 S[extruder0_temperature]	; Heat first nozzle for auto-leveling ,	M104 T1 S[extruder1_temperature]	; heat second nozzle for auto leveling,	M109 T0 S[extruder0_temperature]	; Wait for first extruder to reach temperature,	M109 T1 S[extruder1_temperature]	; Wait for second extruder to reach temperature,,M117 Homing...        		; Print message on LCD Display,                        G28 F200		; Home all axes,,M117 Cleaning...        		; Print message on LCD Display,	T1	                 	; switch to secondary nozzle,	G1 E-20 F125		; Retract filament,	T0	                 	; switch to primary nozzle,	G1 E-20 F125		;  Retract filament,,	G1 Z0  F1200		; Raise bed,	G1 X20 Y226 F7000	; Transit to brushes,	G1 Z-2  F1200               	; Lower to brush level,	G1 X138 Y226 F2000	; First pass across brushes,	G1 X40 Y230 F2000	; Second pass back across brushes,	G1 X138 Y230 F2000	; Third pass through brushes,	G1 X40 Y226 F2000           	; Fourth pass back through brushes,	G1 Z0 F1200		; Raise above bed,,M117 Auto-level probing...        		; Print message on LCD Display,	M204 S300                    	; set accel for probing,	M203 Z4                      	; set z max speed for probing,	G29		; Auto level routine,	M204 S3500                   	; set accel back to normal,	M203 Z20                      	; set z max back to limit,	G1 Z10	 	; raise nozzle up 10mm,,M117 Purge and prime...        		; Print message on LCD Display,	M104 T0 S0		; Cool first extruder,	G0 X150 Y230 F12000	; Rapid X-Y to ooze location,	G0 Z5 F1200		; Rapid Z to ooze location,	T0	                 	; switch to secondary nozzle,	G1 E20 F125		; Extrude to prevent retract build-up,	T1	                 	; switch to secondary nozzle,	G1 E50 F125		; Prime extruder,	M82		; Switch to absolute extrusion,	G92 E0                        	; zero extruder,,	G4 S10		; Pause for ooze,	M190 S[bed0_temperature]	; Wait for bed to reach proper temperature,	G1 X40 F2000		; Swipe through brushes,	G0 Z10 F7000		; Raise bed,	G0 X140 Y100 F10000	; Move bed around center for safety and to prevent dragging across clips on start,,	M400                         	; clear buffer,,M117 AXIOM Printing...	; Print message on LCD Display</startingGcode>
   </autoConfigureExtruders>
   <autoConfigureExtruders name="All Extruders" allowedToolheads="2">
     <primaryExtruder>0</primaryExtruder>
     <raftExtruder>1</raftExtruder>
     <skirtExtruder>0</skirtExtruder>
     <infillExtruder>0</infillExtruder>
-    <supportExtruder>1</supportExtruder>
+    <supportExtruder>0</supportExtruder>
     <useSkirt>1</useSkirt>
     <usePrimePillar>0</usePrimePillar>
     <useOozeShield>0</useOozeShield>
-    <startingGcode>;Axiom Dual Start Code (Rich Mayfield),	M42 P6 S255		; turn lights on,	G21		; metric values,	G90                          	; absolute positioning,	M83                         	; set extruder to relative mode for purging and cleaning,	M107		; Turn fan off,	M140 S[bed0_temperature]	; Preheat bed do not wait,,M117 Heating...       		; Print message on LCD Display,	M104 T0 S[extruder0_temperature]	; Heat first nozzle for auto-leveling ,	M104 T1 S[extruder1_temperature]	; heat second nozzle for auto leveling,	M109 T0 S[extruder0_temperature]	; Wait for first extruder to reach temperature,	M109 T1 S[extruder1_temperature]	; Wait for second extruder to reach temperature,,M117 Homing...        		; Print message on LCD Display,                        G28 F200		; Home all axes,,M117 Cleaning...        		; Print message on LCD Display,	T1	                 	; switch to secondary nozzle,	G1 E-20 F125		; Retract filament,	T0	                 	; switch to primary nozzle,	G1 E-20 F125		;  Retract filament,,	G1 Z0  F1200		; Raise bed,	G1 X20 Y226 F7000	; Transit to brushes,	G1 Z-2  F1200               	; Lower to brush level,	G1 X138 Y226 F2000	; First pass across brushes,	G1 X40 Y230 F2000	; Second pass back across brushes,	G1 X138 Y230 F2000	; Third pass through brushes,	G1 X40 Y226 F2000           	; Fourth pass back through brushes,	G1 Z0 F1200		; Raise above bed,,M117 Auto-level probing...        		; Print message on LCD Display,	G28 X0 Y0		; Begin homing routine, home x/y axes,	M204 S300                    	; set accel for probing,	M203 Z4                      	; set z max speed for probing,	G29		; Auto level routine,	M204 S3500                   	; set accel back to normal,	M203 Z20                      	; set z max back to limit,	G1 Z10	 	; raise nozzle up 10mm,,M117 Purge and prime...        		; Print message on LCD Display,	G0 X150 Y230 F7000	; Rapid X-Y to ooze location,	G0 Z5 F1200		; Rapid Z to ooze location,	T1	                 	; switch to secondary nozzle,	G1 E70 F125		; Prime extruder,	T0	                 	; switch to primary nozzle,	G1 E70 F125		; Prime extruder,	M82		; Switch to absolute extrusion,	G92 E0                        	; zero extruder,	T1		; Switch to secondary extruder,	G92 E0		; Zero extruder,	T0		; Switch back to primary,,,	G4 S10		; Pause for ooze,	M190 S[bed0_temperature]	; Wait for bed to reach proper temperature,	G1 X40 F2000		; Swipe through brushes,	G0 Z10 F7000		; Lower bed,	G0 X140 Y100 F7000	; Move head around center for safety and to prevent dragging across clips on start,,	M400                 		; clear buffer,	,M117 AXIOM Printing...	; Print message on LCD Display</startingGcode>
+    <startingGcode>;Axiom Dual Start Code (Rich Mayfield),	M42 P6 S255		; turn lights on,	G21		; metric values,	G90                          	; absolute positioning,	M83                         	; set extruder to relative mode for purging and cleaning,	M140 S[bed0_temperature]	; Preheat bed do not wait,,M117 Heating...       		; Print message on LCD Display,	M104 T0 S[extruder0_temperature]	; Heat first nozzle for auto-leveling ,	M104 T1 S[extruder1_temperature]	; heat second nozzle for auto leveling,	M109 T0 S[extruder0_temperature]	; Wait for first extruder to reach temperature,	M109 T1 S[extruder1_temperature]	; Wait for second extruder to reach temperature,,M117 Homing...        		; Print message on LCD Display,                        G28 F200		; Home all axes,,M117 Cleaning...        		; Print message on LCD Display,	T1	                 	; switch to secondary nozzle,	G1 E-20 F125		; Retract filament,	T0	                 	; switch to primary nozzle,	G1 E-20 F125		;  Retract filament,,	G1 Z0  F1200		; Raise bed,	G1 X20 Y226 F7000	; Transit to brushes,	G1 Z-2  F1200               	; Lower to brush level,	G1 X138 Y226 F2000	; First pass across brushes,	G1 X40 Y230 F2000	; Second pass back across brushes,	G1 X138 Y230 F2000	; Third pass through brushes,	G1 X40 Y226 F2000           	; Fourth pass back through brushes,	G1 Z0 F1200		; Raise above bed,,M117 Auto-level probing...        		; Print message on LCD Display,	M204 S300                    	; set accel for probing,	M203 Z4                      	; set z max speed for probing,	G29		; Auto level routine,	M204 S3500                   	; set accel back to normal,	M203 Z20                      	; set z max back to limit,	G1 Z10	 	; raise nozzle up 10mm,,M117 Purge and prime...        		; Print message on LCD Display,	G0 X150 Y230 F7000	; Rapid X-Y to ooze location,	G0 Z5 F1200		; Rapid Z to ooze location,	T1	                 	; switch to secondary nozzle,	G1 E50 F125		; Prime extruder,	T0	                 	; switch to primary nozzle,	G1 E50 F125		; Prime extruder,	M82		; Switch to absolute extrusion,	G92 E0                        	; zero extruder,	T1		; Switch to secondary extruder,	G92 E0		; Zero extruder,	T0		; Switch back to primary,,,	G4 S10		; Pause for ooze,	M190 S[bed0_temperature]	; Wait for bed to reach proper temperature,	G1 X40 F2000		; Swipe through brushes,	G0 Z10 F7000		; Lower bed,	G0 X140 Y100 F7000	; Move head around center for safety and to prevent dragging across clips on start,,	M400                 		; clear buffer,	,M117 AXIOM Printing...	; Print message on LCD Display</startingGcode>
   </autoConfigureExtruders>
 </profile>
